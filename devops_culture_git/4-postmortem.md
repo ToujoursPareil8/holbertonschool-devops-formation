@@ -1,6 +1,6 @@
 ## Task 4 : When prod breaks: chase the cause, not the culprit
 
-#### Timeline
+### Timeline
 
 **Friday 5:40pm**: A fix requested by the marketing team is made for deployment to the prod server.
 
@@ -12,7 +12,7 @@
 
 **Saturday 11.40 am (Resolved)**: After identifying the cause of the bug, the file is fixed by hand, service restored after 15hours of downtime.
 
-#### Systemic causes
+### Systemic causes
 
 Manual deployment Process: this process bypasses version control
 Lack of Environment Parity: No staging or test environment, changes are validated locally. Making it impossible to catch errors before release
@@ -20,7 +20,7 @@ Zero Observability: No automated monitoring and alerting for critical business p
 Access and Knowledge Silos: Deployment knowledge and server access are centralizes. When issues occur out of work hours, nobody had access to what was required to investigate what had changed.
 No Rollback Mechanism: because the deployment is manual and undocumented, there is no way to quickly revert the system. 
 
-#### 3 Priority actions & DORA metrics degraded
+### 3 Priority actions & DORA metrics degraded
 
 **Action 1 : Implement an Automated CI/CD pipeline**
 
