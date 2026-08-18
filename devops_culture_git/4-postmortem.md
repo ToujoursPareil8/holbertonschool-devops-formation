@@ -2,11 +2,15 @@
 
 **Timeline**
 
->Friday 5:40pm : A fix requested by the marketing team is made for deployment to the prod server.
->Friday 5:52pm (Occured): The config file is edited on the prod server. A syntax error is introduced to the database URL = breaks the checkout process.
->Friday 8:30pm (Deteected by users): Customer report the checkout failure on social media. Team is unaware because no automated alerting.
->Saturday 9.15 am (Detected by team): Discovery of the customer complaints.
->Saturday 11.40 am (Resolved): After identifying the cause of the bug, the file is fixed by hand, service restored after 15hours of downtime.
+Friday 5:40pm : A fix requested by the marketing team is made for deployment to the prod server.
+
+Friday 5:52pm (Occured): The config file is edited on the prod server. A syntax error is introduced to the database URL = breaks the checkout process.
+
+Friday 8:30pm (Deteected by users): Customer report the checkout failure on social media. Team is unaware because no automated alerting.
+
+Saturday 9.15 am (Detected by team): Discovery of the customer complaints.
+
+Saturday 11.40 am (Resolved): After identifying the cause of the bug, the file is fixed by hand, service restored after 15hours of downtime.
 
 **Systemic causes**
 
