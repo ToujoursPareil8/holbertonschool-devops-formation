@@ -4,7 +4,7 @@ services:
     ports:
       - "8080:80"
     volumes:
-      - ./web: /usr/share/nginx/html
+      - "./web:/usr/share/nginx/html"
     depends_on:
       - api
 
