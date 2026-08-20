@@ -1,0 +1,37 @@
+<!-- 0-first_stack/web/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Stack</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 50px; }
+        button { padding: 10px 20px; font-size: 16px; cursor: pointer; }
+        #result { margin-top: 20px; font-weight: bold; color: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Bienvenue sur le Web Front !</h1>
+    <p>Cette page est servie par un conteneur Nginx.</p>
+    
+    <button onclick="fetchApi()">Interroger l'API</button>
+    
+    <p id="result">Cliquez sur le bouton pour contacter l'API Python...</p>
+
+    <script>
+        function fetchApi() {
+            fetch('http://localhost:5000/api')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('result').innerText = 
+                        data.message + ' (Nombre total de requêtes : ' + data.hits + ')';
+                })
+                .catch(error => {
+                    console.error('Erreur:', error);
+                    document.getElementById('result').innerText = "Erreur de connexion à l'API.";
+                });
+        }
+    </script>
+</body>
+</html>
