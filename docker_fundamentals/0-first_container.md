@@ -37,4 +37,4 @@ docker rm my-nginx
 
 **Image vs Container**: an "image" is a static, read only file that holds all the instructions (like a cake recipe) and code to run a program. A "container" is the active, running version of that program (the cake). You can start run and delete the container without changing the original image file.
 **Isolated Workspace**:When looking inside the container, i saw that it creats its own separate workspace. it holds only the files needed to function, keeping its processes cseparated from my main system.
-**Network access and Logs**:the container is disconnected from my cpu's netwirk. I had to creat a specific connection (publishing a port) to allow my cpu to communicate with the server inside. The container automatically logs its activity readable with `docker logs`.
+**Network access and Logs**:the container is disconnected from my cpu's netwirk. I had to create a specific connection (publishing a port) to allow my cpu to communicate with the server inside. The container automatically logs its activity readable with `docker logs`.
