@@ -1,0 +1,4 @@
+# 0-first_stack/api/requirements.txt
+flask
+redis
+flask-cors
