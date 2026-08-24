@@ -18,7 +18,7 @@ pgdata
 
 next, we start a PostgreSQM container in `-d` detached mode, we pass a mandatory environment variable(`POSTGRES_PASSWORD`) for initializaton. then we mount our named volume to /var/lib/postgresql (this is the default dir where pstgre image stores its db files). Adding `--pull=always`forces docker to contact the registry every time before starting the container allowing to always get the latest version of an image.
 ```bash
-docker run -d --name my-postgres --pul=always -e POSTGRES_PASSWORD=mysecret -v pgdata:/var/lib/postgresql/ postgres
+docker run -d --name my-postgres --pull=always -e POSTGRES_PASSWORD=mysecret -v pgdata:/var/lib/postgresql/ postgres
 ```
 
 **Observation :** Docker pull the latest `postrges` image, creates the container and outputs the container ID. Db is starting in the background.
