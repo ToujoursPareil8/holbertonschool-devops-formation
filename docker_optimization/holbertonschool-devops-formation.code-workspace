@@ -1,0 +1,21 @@
+{
+	"folders": [
+		{
+			"name": "holbertonschool-devops-formation",
+			"path": ".."
+		},
+		{
+			"name": "2-optimize",
+			"path": "../../../../Users/jason/Downloads/7882763e07fbc27ece70e7c8da5d700896fd9934/2-optimize"
+		},
+		{
+			"name": "3-multistage",
+			"path": "../../../../Users/jason/Downloads/7882763e07fbc27ece70e7c8da5d700896fd9934/3-multistage"
+		},
+		{
+			"name": "4-harden",
+			"path": "../../../../Users/jason/Downloads/7882763e07fbc27ece70e7c8da5d700896fd9934/4-harden"
+		}
+	],
+	"settings": {}
+}
